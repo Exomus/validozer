@@ -46,7 +46,7 @@ jobs:
       - *install-deps
       - *build-packages
       - *run-unit-tests
-      - sonarcloud/scan -X
+      - sonarcloud/scan
 
 workflows:
   version: 2
