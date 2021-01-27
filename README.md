@@ -1,4 +1,5 @@
-[![CircleCI](https://circleci.com/gh/Exomus/validozer.svg?style=shield)](https://circleci.com/gh/Exomus/validozer)
+
+[![CircleCI](https://circleci.com/gh/Exomus/validozer.svg?style=shield)](https://circleci.com/gh/Exomus/validozer) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Exomus_validozer) [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=ncloc)](https://sonarcloud.io/dashboard?id=Exomus_validozer) [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=sqale_index)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
 # validozer
 TypeScript runtime validator.
 
