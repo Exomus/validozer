@@ -1,5 +1,6 @@
 version: 2
-
+orbs:
+  sonarcloud: sonarsource/sonarcloud@1.0.2
 aliases:
   - &restore-cache
     restore_cache:
@@ -45,6 +46,7 @@ jobs:
       - *install-deps
       - *build-packages
       - *run-unit-tests
+      - sonarcloud/scan
 
 workflows:
   version: 2
