@@ -13,7 +13,7 @@ You can use a variety of predicate combined with this library, create your own, 
 
 For example:
 
-`npm i git+https://github.com/Exomus/validozer.git#v0.0.1`
+`npm i git+https://github.com/Exomus/validozer.git#v0.1.0`
 
 ## npm package <img src="https://pbs.twimg.com/media/EDoWJbUXYAArclg.png" width="24" height="24" />
 
