@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/Exomus/validozer.svg?style=shield)](https://circleci.com/gh/Exomus/validozer)
 # validozer
 TypeScript runtime validator.
 
