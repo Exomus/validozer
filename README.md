@@ -33,9 +33,9 @@ This package needs to be checked before publishing the first version.
 
 ```typescript
 const validatedRequest = Validator.of<Request>(request)
-    .validate(request => isDefined(request.name), 'The name is not defined')
-    .validate(request => isDefined(request.firstname), 'The firstname is not defined')
-    .validate(request => isEmail(request.email), 'The email is not at the right format')
+    .validate(request => isDefined(request.name), new Error('The name is not defined'))
+    .validate(request => isDefined(request.firstname),  new Error('The firstname is not defined'))
+    .validate(request => isEmail(request.email),  new Error('The email is not at the right format'))
     .get();
 ```
 

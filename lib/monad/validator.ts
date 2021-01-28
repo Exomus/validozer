@@ -73,8 +73,7 @@ export class Validator<T> {
     if (this.errorList.length == 0) {
       return this.object;
     }
-    const validationError = new ValidationError();
-    validationError.appendChildren(this.errorList);
+    const validationError: ValidationError = new ValidationError(this.errorList);
     validationError.stack = JSON.stringify(this.object);
     throw validationError;
   }

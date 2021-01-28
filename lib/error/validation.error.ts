@@ -4,27 +4,19 @@
 import {IllegalArgumentError} from "./illegal-argument.error";
 
 export class ValidationError extends Error {
-    private childErrorList: Error[] = [];
 
     /**
      * Constructs an IllegalArgumentError with an optional detail message.
      */
-    constructor() {
+    constructor(errorList: Error[]) {
         super();
+        if (!errorList) throw new IllegalArgumentError('errorList must be defined');
         this.name = ValidationError.name;
-    }
 
-    get message(): string {
         let builtInMessage = 'One or multiple errors have been found during validation:\n'
-
-        this.childErrorList.forEach((error, index) => {
+        errorList.forEach((error, index) => {
             builtInMessage += index + 1 + ') ' + error.name + (error.message ? ' - ' + error.message : '') + '\n';
         })
-        return builtInMessage;
-    }
-
-    appendChildren(errorList: Error[]) {
-        if (!errorList) throw new IllegalArgumentError('Error passed cannot be null or undefined.');
-        this.childErrorList = this.childErrorList.concat(errorList);
+        this.message = builtInMessage;
     }
 }
