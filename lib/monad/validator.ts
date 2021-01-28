@@ -1,5 +1,4 @@
 import {IllegalArgumentError} from "../error/illegal-argument.error";
-import {IllegalStateError} from "../error/illegal-state.error";
 import {ValidationError} from "../error/validation.error";
 
 /**
