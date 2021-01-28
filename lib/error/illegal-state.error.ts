@@ -1,5 +1,6 @@
 /**
- * Signals that a method has been invoked at an illegal or inappropriate time. In other words, the Typescript environment or Typescript application is not in an appropriate state for the requested operation.
+ * Signals that a method has been invoked at an illegal or inappropriate time. In other words,
+ * the Typescript environment or Typescript application is not in an appropriate state for the requested operation.
  */
 export class IllegalStateError extends Error {
     /**

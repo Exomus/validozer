@@ -69,7 +69,7 @@ export class Validator<T> {
      * @throws Error when any validation step results with failure
      */
     public get(): T {
-        if (this.errorList.length == 0) {
+        if (this.errorList.length === 0) {
             return this.object;
         }
         const validationError: ValidationError = new ValidationError(this.errorList);
