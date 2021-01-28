@@ -1,4 +1,13 @@
-[![CircleCI](https://circleci.com/gh/Exomus/validozer.svg?style=shield)](https://circleci.com/gh/Exomus/validozer)
+
+[![CircleCI](https://circleci.com/gh/Exomus/validozer.svg?style=shield)](https://circleci.com/gh/Exomus/validozer) 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=alert_status)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=coverage)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=code_smells)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=ncloc)](https://sonarcloud.io/dashboard?id=Exomus_validozer) 
+
+
 # validozer
 TypeScript runtime validator.
 
@@ -24,8 +33,8 @@ This package needs to be checked before publishing the first version.
 
 ```typescript
 const validatedRequest = Validator.of<Request>(request)
-    .validate(request => isDefined(request.name), 'The toCreateUser is not defined')
-    .validate(request => isDefined(request.firstname), 'The name is not defined')
+    .validate(request => isDefined(request.name), 'The name is not defined')
+    .validate(request => isDefined(request.firstname), 'The firstname is not defined')
     .validate(request => isEmail(request.email), 'The email is not at the right format')
     .get();
 ```
