@@ -5,6 +5,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Exomus_validozer) 
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=ncloc)](https://sonarcloud.io/dashboard?id=Exomus_validozer) 
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=code_smells)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=coverage)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
 # validozer
 TypeScript runtime validator.
 
