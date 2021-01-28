@@ -1,5 +1,6 @@
 import { IllegalArgumentError } from "../error/illegal-argument.error";
 import { IllegalStateError } from "../error/illegal-state.error";
+import {ValidationError} from "../error/validation.error";
 
 /**
  * Class representing Monad design pattern. Monad is a way of chaining operations on the given
@@ -52,12 +53,12 @@ export class Validator<T> {
    * @param predicate one argument boolean-valued function that represents one step of validation.
    *                   Adds exception to main validation exception list when single step validation
    *                   ends with failure.
-   * @param message    error message when object is invalid
+   * @param failureError Error that will be registered with a customized message
    * @return this
    */
-  public validate(predicate: (t: T) => boolean, message: string): Validator<T> {
+  public validate(predicate: (t: T) => boolean, failureError: Error): Validator<T> {
     if (!predicate.call(undefined, this.object)) {
-      this.errorList.push(new Error(message));
+      this.errorList.push(failureError);
     }
     return this;
   }
@@ -72,9 +73,9 @@ export class Validator<T> {
     if (this.errorList.length == 0) {
       return this.object;
     }
-    const gatheringError = new IllegalStateError();
-    this.errorList.forEach(error => gatheringError.message += `${error.message}\n`);
-    gatheringError.stack = JSON.stringify(this.object);
-    throw gatheringError;
+    const validationError = new ValidationError();
+    validationError.appendChildren(this.errorList);
+    validationError.stack = JSON.stringify(this.object);
+    throw validationError;
   }
 }
