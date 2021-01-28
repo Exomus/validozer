@@ -1,4 +1,3 @@
-import {IllegalArgumentError} from "../error/illegal-argument.error";
 import {ValidationError} from "../error/validation.error";
 
 /**
@@ -40,10 +39,7 @@ export class Validator<T> {
      * @return new instance of a validator
      */
     public static of<T>(t: T): Validator<T> {
-        if (!t) {
-            throw new IllegalArgumentError("Undefined or null object passed through the Validator constructor");
-        }
-        return new Validator<T>((t));
+        return new Validator<T>(t);
     }
 
     /**
@@ -56,8 +52,12 @@ export class Validator<T> {
      * @return this
      */
     public validate(predicate: (t: T) => boolean, failureError: Error): Validator<T> {
-        if (!predicate.call(undefined, this.object)) {
-            this.errorList.push(failureError);
+        try {
+            if (!predicate.call(undefined, this.object)) {
+                this.errorList.push(failureError);
+            }
+        } catch (e) {
+            this.errorList.push(e);
         }
         return this;
     }
