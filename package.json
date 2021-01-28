@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc",
     "test:ci": "CI=true npm test -- --coverage --testResultsProcessor=jest-sonar-reporter",
     "test": "jest --runInBand"
