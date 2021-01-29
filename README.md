@@ -21,10 +21,6 @@ You can use a variety of predicate combined with this library, create your own, 
 ## Early build
 `npm i git+https://github.com/Exomus/validozer.git#<release version>`
 
-For example:
-
-`npm i git+https://github.com/Exomus/validozer.git#v0.3.1-alpha`
-
 ## npm package <img src="https://pbs.twimg.com/media/EDoWJbUXYAArclg.png" width="24" height="24" />
 
 This package needs to be checked before publishing the first version.
