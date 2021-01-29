@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://i.imgur.com/skE2evv.png" alt="Validatozer Logo" />
+</p>
 
 [![CircleCI](https://circleci.com/gh/Exomus/validozer.svg?style=shield)](https://circleci.com/gh/Exomus/validozer) 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
