@@ -1,7 +1,6 @@
 <p align="center">
 <img src="https://i.imgur.com/skE2evv.png" alt="Validatozer Logo" />
-</p>
-
+    
 [![CircleCI](https://circleci.com/gh/Exomus/validozer.svg?style=shield)](https://circleci.com/gh/Exomus/validozer) 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=alert_status)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
@@ -9,6 +8,9 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=code_smells)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=ncloc)](https://sonarcloud.io/dashboard?id=Exomus_validozer) 
+</p>
+
+
 
 
 # validozer
