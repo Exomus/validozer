@@ -14,10 +14,8 @@
 
 </p>
 
-Hugely inspired typescript implementation of https://github.com/iluwatar/java-design-patterns
-
 # validozer
-TypeScript runtime validator.
+TypeScript runtime validator. Hugely inspired typescript implementation of https://github.com/iluwatar/java-design-patterns
 
 Performs a validation on runtime using a [monad](https://en.wikipedia.org/wiki/Monad_(functional_programming)).
 
