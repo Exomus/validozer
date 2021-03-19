@@ -5,7 +5,7 @@
 <p align="center">
     
 [![CircleCI](https://circleci.com/gh/Exomus/validozer.svg?style=shield)](https://circleci.com/gh/Exomus/validozer) 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=alert_status)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=coverage)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Exomus_validozer&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=Exomus_validozer)
