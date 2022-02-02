@@ -24,12 +24,9 @@ You can use a variety of predicate combined with this library, create your own, 
 
 # Getting started
 
-## Early build
-`npm i git+https://github.com/Exomus/validozer.git#<release version>`
-
 ## npm package <img src="https://pbs.twimg.com/media/EDoWJbUXYAArclg.png" width="24" height="24" />
 
-This package needs to be checked before publishing the first version.
+`npm i validozer-monad`
 
 # Usage
 
