@@ -1,6 +1,6 @@
 {
   "name": "validozer-monad",
-  "version": "0.3.2-alpha",
+  "version": "0.3.3",
   "description": "Typescript runtime validator with the monad syntax",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Exomus/validozer.git"
   },
   "author": "Adam NAILI",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Exomus/validozer/issues"
   },
